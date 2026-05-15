@@ -249,7 +249,12 @@
 		border-left: 1px solid rgba(0,0,0,0.06);
 	}
 
-	.shapes { position: absolute; inset: 0; pointer-events: none; }
+	/* ── Shapes: hide on mobile so they don't cover content ── */
+	.shapes {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+	}
 	.shape {
 		position: absolute;
 		animation: floatUp 5s ease-in-out infinite alternate;
@@ -279,7 +284,12 @@
 		100% { transform: translateY(-20px); }
 	}
 
-	.project-info { position: relative; z-index: 2; padding: 4rem 3rem; max-width: 580px; }
+	.project-info {
+		position: relative;
+		z-index: 2;
+		padding: 4rem 3rem;
+		max-width: 580px;
+	}
 	.project-number { font-size: 0.72rem; opacity: 0.35; letter-spacing: 0.18em; margin-bottom: 1.5rem; }
 
 	.project-title-block {
@@ -294,9 +304,14 @@
 	}
 
 	.project-desc {
-		font-size: 0.92rem; line-height: 1.75;
-		color: rgba(0,0,0,0.62); max-width: 400px; margin-bottom: 1.5rem;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: rgba(0, 0, 0, 0.78);
+		max-width: 420px;
+		margin-bottom: 1.5rem;
+		font-weight: 400;
 	}
+
 	.project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 2rem; }
 	.tech-tag {
 		font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
@@ -439,7 +454,16 @@
 
 	@media (max-width: 768px) {
 		.projects-header, .more-projects { padding: 2rem 1.5rem; }
-		.project-info { padding: 3rem 1.5rem; }
+		.project-info { padding: 2.5rem 1.5rem; }
+
+		.shapes { display: none; }
+
+		.more-shape-preview { display: none; }
+
+		.project-desc {
+			font-size: 0.95rem;
+		}
+
 		.modal { grid-template-columns: 1fr; }
 		.modal-left { min-height: 35vh; }
 		.modal-right { padding: 2.5rem 1.5rem; }

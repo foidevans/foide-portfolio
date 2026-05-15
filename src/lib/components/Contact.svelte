@@ -51,8 +51,8 @@
 				together.
 			</h2>
 			<div class="contact-info">
-				<a href="mailto:favourevans@example.com" class="email-link">
-					favourevans@example.com
+				<a href="mailto:foidedesigns23@gmail.com" class="email-link">
+					foidedesigns23@gmail.com
 				</a>
 				<div class="socials">
 					<a href="https://github.com/foidevans" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
